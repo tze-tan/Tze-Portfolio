@@ -2,6 +2,8 @@
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --heading-font: "Playfair Display", serif;
+  --primary-font: "Poppins", sans-serif;
 }
 
 h1,
@@ -9,6 +11,7 @@ h2,
 h3 {
   text-align: center;
   margin: 0;
+  font-family: var(--heading-font);
 }
 
 h1 {
@@ -28,8 +31,9 @@ p {
   font-size: 18px;
   line-height: 1.5;
   margin: 20px 0 30px 0;
+  font-family: var(--primary-font);
 }
-
+/*
 .navigation-links {
   display: flex;
   margin: 15px;
@@ -54,6 +58,7 @@ p {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
+*/
 
 .homepage-link {
   color: var(--primary-color);
@@ -83,6 +88,7 @@ p {
   color: white;
   border-radius: 4px;
   padding: 10px;
+  font-family: var(--primary-font);
 }
 
 .world-clock {
