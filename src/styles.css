@@ -47,8 +47,25 @@ p {
   margin: 0 auto;
 }
 
-.custom-navbar {
+.custom-navbar-bg {
   font-family: var(--secondary-font);
+  background-color: #f8f9fa;
+}
+
+.custom-navbar-active {
+  color: var(--primary-color);
+  padding: 8px;
+}
+
+.custom-navbar-link {
+  color: rgba(0, 0, 0, 0.7);
+  padding: 8px;
+}
+
+.custom-navbar-link:hover,
+.custom-navbar-active:hover {
+  color: var(--primary-color);
+  transition: all 150ms ease-in-out;
 }
 
 footer {
