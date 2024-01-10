@@ -27,7 +27,7 @@ h3 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   margin: 20px 0 30px 0;
   font-family: var(--primary-font);
@@ -65,6 +65,7 @@ footer {
   font-size: 16px;
 }
 
+/* spacing and styles for beginning intro section of each page */
 .page-introductions {
   padding: 10px 0px;
   margin: 20px 0 40px;
@@ -128,13 +129,9 @@ footer {
   font-family: var(--primary-font);
 }
 
-.world-clock {
-  max-height: 88%;
-}
-
-@media (max-width: 560px) {
+@media (max-width: 576px) {
   h1 {
-    font-size: 48px;
+    font-size: 40px;
   }
 
   h2 {
@@ -145,8 +142,16 @@ footer {
     font-size: 15px;
   }
 
+  p {
+    font-size: 14px;
+  }
+
+  .primary-link {
+    font-size: 14px;
+  }
+
   .homepage-intros {
-    margin: 20px 0 20px;
+    margin: 10px 0;
   }
 
   .small-app-image {
@@ -155,5 +160,40 @@ footer {
 
   .navigation-links {
     font-size: 13px;
+  }
+
+  .text-container {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1024px) {
+  .homepage-intros {
+    margin: 30px 0 20px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .primary-link {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .homepage-intros {
+    margin: 80px 0 20px;
   }
 }
