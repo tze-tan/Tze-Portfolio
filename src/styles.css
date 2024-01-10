@@ -41,10 +41,8 @@ p {
   margin-top: 100px;
 }
 
-.text-container {
-  max-width: 70%;
-  display: block;
-  margin: 0 auto;
+.cities-photos:hover {
+  transform: scale(1.2);
 }
 
 .custom-navbar-bg {
