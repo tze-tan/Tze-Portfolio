@@ -10,7 +10,6 @@ h1,
 h2,
 h3 {
   text-align: center;
-  margin: 0;
   font-family: var(--heading-font);
 }
 
@@ -32,6 +31,20 @@ p {
   line-height: 1.5;
   margin: 20px 0 30px 0;
   font-family: var(--primary-font);
+}
+
+.homepage-intro-background {
+  background-color: var(--secondary-color);
+}
+
+.homepage-intros {
+  margin-top: 100px;
+}
+
+.text-container {
+  max-width: 70%;
+  display: block;
+  margin: 0 auto;
 }
 /*
 .navigation-links {
@@ -95,29 +108,25 @@ p {
   max-height: 88%;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 560px) {
   h1 {
-    font-size: 60px;
+    font-size: 48px;
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   h3 {
     font-size: 15px;
   }
 
-  .navigation-links {
-    margin-top: 20px;
-  }
-
-  .small-app {
-    margin-top: 15px;
+  .homepage-intros {
+    margin: 20px 0 20px;
   }
 
   .small-app-image {
-    margin-top: 20px;
+    margin: 20px 0px 20px;
   }
 
   .navigation-links {
