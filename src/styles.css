@@ -6,6 +6,16 @@
   --primary-font: "Poppins", sans-serif;
 }
 
+.container {
+  max-width: 100%;
+}
+
+.content-container {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
 h1,
 h2,
 h3 {
@@ -43,10 +53,6 @@ a {
 
 .homepage-intros {
   margin-top: 100px;
-}
-
-.cities-photos:hover {
-  transform: scale(1.2);
 }
 
 .custom-navbar-bg {
@@ -95,59 +101,37 @@ footer {
   margin: 20px 0 40px;
 }
 
-/*
-.navigation-links {
-  display: flex;
-  margin: 15px;
-  justify-content: center;
+.page-introductions h1 {
+  font-size: 64px;
 }
 
-.navigation-links a {
-  margin: 15px;
-  border-radius: 4px;
-  padding: 15px;
-  text-decoration: none;
-  text-transform: capitalize;
+.page-lists {
+  list-style: none;
+  padding: 0;
 }
 
-.contact-link {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
+/* about page custom style */
+.about-photos {
+  filter: grayscale(100%);
+  margin-top: 60px;
 }
-
-.about-link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-*/
-
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
-}
-
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
-  text-decoration: none;
-}
-
-.email-link:hover {
-  text-decoration: underline;
-}
-
-.container {
-  max-width: 90%;
+.about-photos:hover {
+  transform: scale(1.2);
 }
 
 .primary-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: var(--primary-font);
+}
+
+.primary-link:hover {
+  background: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  color: var(--primary-color);
   border-radius: 4px;
   padding: 10px;
   font-family: var(--primary-font);
@@ -184,10 +168,6 @@ footer {
 
   .navigation-links {
     font-size: 13px;
-  }
-
-  .text-container {
-    max-width: 90%;
   }
 }
 
