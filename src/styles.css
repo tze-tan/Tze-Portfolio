@@ -95,6 +95,23 @@ footer {
   color: white;
 }
 
+.primary-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: var(--primary-font);
+}
+
+.primary-link:hover {
+  background: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  color: var(--primary-color);
+  border-radius: 4px;
+  padding: 10px;
+  font-family: var(--primary-font);
+}
 /* spacing and styles for beginning intro section of each page */
 .page-introductions {
   padding: 10px 0px;
@@ -119,22 +136,11 @@ footer {
   transform: scale(1.2);
 }
 
-.primary-link {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-  border-radius: 4px;
-  padding: 10px;
-  font-family: var(--primary-font);
-}
-
-.primary-link:hover {
-  background: var(--secondary-color);
-  box-shadow: var(--box-shadow);
-  color: var(--primary-color);
-  border-radius: 4px;
-  padding: 10px;
-  font-family: var(--primary-font);
+/* work page custom style */
+.google-gif {
+  max-width: 60%;
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 576px) {
