@@ -25,7 +25,7 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="../src/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -60,14 +60,17 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="custom-navbar-link" href="index.html" title="Homepage"
+              <a
+                class="custom-navbar-link"
+                href="../index.html"
+                title="Homepage"
                 >Home</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="custom-navbar-link"
-                href="about.html"
+                href="../about.html"
                 title="Learn more about my philosophy and journey"
                 >About</a
               >
@@ -75,23 +78,39 @@
             <li class="nav-item">
               <a
                 class="custom-navbar-link"
-                href="work.html"
+                href="../work.html"
                 title="Learn more about my professional experiences"
                 >Work</a
               >
             </li>
-            <li class="nav-item">
+
+            <li class="nav-item dropdown">
               <a
                 class="custom-navbar-active"
-                href="projects.html"
-                title="Learn more about my latest learning projects"
-                >Projects</a
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
+                Projects
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="frontend-dev.html"
+                  >Frontend Development</a
+                >
+                <a class="dropdown-item" href="languages.html">Languages</a>
+                <a class="dropdown-item" href="travel.html/"
+                  >Travel and Photography</a
+                >
+              </div>
             </li>
+
             <li class="nav-item">
               <a
                 class="custom-navbar-link"
-                href="mentoring.html"
+                href="../mentoring.html"
                 title="Sign up for pro bono mentoring"
                 >Pro Bono Mentoring</a
               >
@@ -126,7 +145,7 @@
         <div class="row">
           <div class="col-sm-6">
             <img
-              src="images/projects/weather-app.png"
+              src="../images/projects/weather-app.png"
               class="img-fluid rounded"
               alt="Weather application with red and white background with a search bar for users to enter desired cities"
             />
@@ -169,7 +188,7 @@
           </div>
           <div class="col-sm-6">
             <img
-              src="images/projects/world-clock-latest.png"
+              src="../images/projects/world-clock-latest.png"
               class="img-fluid rounded small-app-image"
               alt="Website on a dark green background, showing the current time in Munich, Kuala Lumpur and Melbourne, with a user dropdown to prompt users to select a city"
             />
@@ -177,7 +196,7 @@
           <div class="row mt-5">
             <div class="col-sm-6">
               <img
-                src="images/projects/gsg.gif"
+                src="../images/projects/gsg.gif"
                 class="img-fluid rounded mb-3"
                 alt="Three german sentences are generated based on the input prompt 'chicken', with corresponding English translations"
               />
