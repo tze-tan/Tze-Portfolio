@@ -147,6 +147,18 @@ footer {
   margin: 0 auto;
 }
 
+/*mentoring custom style */
+.sign-up-prompt {
+  padding: 20px;
+  margin: 10px;
+}
+
+.sign-up-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
 @media (max-width: 576px) {
   h1 {
     font-size: 40px;
