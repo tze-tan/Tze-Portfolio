@@ -130,6 +130,15 @@ footer {
   padding: 0;
 }
 
+/* home page custom style */
+.work-link {
+  text-align: center;
+}
+
+.mentor-link {
+  text-align: right;
+}
+
 /* about page custom style */
 .about-photos {
   filter: grayscale(100%);
@@ -176,7 +185,7 @@ footer {
   }
 
   .primary-link {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .homepage-intros {
@@ -189,6 +198,14 @@ footer {
 
   .navigation-links {
     font-size: 13px;
+  }
+
+  .work-link {
+    text-align: left;
+  }
+
+  .mentor-link {
+    text-align: left;
   }
 }
 
@@ -213,7 +230,7 @@ footer {
   }
 
   .primary-link {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
