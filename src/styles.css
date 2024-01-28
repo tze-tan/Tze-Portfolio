@@ -118,8 +118,7 @@ footer {
 }
 /* spacing and styles for beginning intro section of each page */
 .page-introductions {
-  padding: 10px 0px;
-  margin: 20px 0 20px;
+  margin-top: 20px;
 }
 
 .page-introductions h1 {
