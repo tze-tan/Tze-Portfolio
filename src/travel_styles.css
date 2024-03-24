@@ -7,6 +7,7 @@
 }
 
 h1,
+h2,
 h3 {
   font-family: var(--heading-font);
 }
@@ -46,6 +47,7 @@ header {
     url("../images/travel/voltaire_lighthouse_landscape.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   padding: 160px;
   margin: 40px 0;
   color: white;
@@ -91,11 +93,38 @@ footer {
   margin: 0;
 }
 
+h2 {
+  text-align: center;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  padding: 60px;
+  background-color: rbga(211, 211, 211);
+}
+
+.image-gallery img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  filter: drop-shadow(0px 10px 5px #898181);
+}
+
+.song-embed {
+  width: 400px;
+  aspect-ratio: 1/1;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
 @media (max-width: 800px) {
   .footer-grid {
     grid-template-columns: 1fr;
     padding: 20px;
     max-width: 100%;
+    grid-gap: 10px;
   }
 
   header {
@@ -108,6 +137,7 @@ footer {
 
   header h3 {
     font-size: 24px;
+    margin: 20px 0;
   }
 
   footer h3 {
@@ -118,5 +148,18 @@ footer {
 
   footer p {
     font-size: 12px;
+  }
+
+  section h2 {
+    font-size: 18px;
+  }
+
+  .image-gallery {
+    padding: 20px;
+    grid-gap: 5px;
+  }
+
+  .song-embed {
+    width: 200px;
   }
 }
