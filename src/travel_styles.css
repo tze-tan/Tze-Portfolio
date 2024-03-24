@@ -1,3 +1,42 @@
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --heading-font: "Playfair Display", serif;
+  --primary-font: "Poppins", sans-serif;
+}
+
+h1,
+h3 {
+  font-family: var(--heading-font);
+}
+
+p {
+  font-family: var(--primary-font);
+}
+
+.custom-navbar-bg {
+  font-family: var(--secondary-font);
+}
+
+.custom-navbar-active {
+  color: var(--primary-color);
+  padding: 8px;
+}
+
+.custom-navbar-link {
+  color: rgba(0, 0, 0, 0.7);
+  padding: 8px;
+}
+
+.custom-navbar-link:hover,
+.custom-navbar-active:hover {
+  color: var(--primary-color);
+  transition: all 150ms ease-in-out;
+}
+
+/*travel specific page style*/
+
 .travel-container {
   width: 100%;
 }
@@ -25,8 +64,12 @@ header h3 {
   letter-spacing: 3px;
 }
 
+footer h3 {
+  font-size: 20px;
+}
+
 footer p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1;
 }
 
@@ -36,6 +79,7 @@ footer p {
   margin: 0 auto;
   grid-gap: 20px;
   padding: 60px 0;
+  max-width: 90%;
 }
 
 footer {
@@ -44,12 +88,14 @@ footer {
   background-size: cover;
   background-position: center;
   color: white;
+  margin: 0;
 }
 
 @media (max-width: 800px) {
   .footer-grid {
     grid-template-columns: 1fr;
     padding: 20px;
+    max-width: 100%;
   }
 
   header {
@@ -64,16 +110,13 @@ footer {
     font-size: 24px;
   }
 
-  footer p {
-    font-size: 12px;
-  }
-
-  footer {
-    text-align: left;
-  }
-
   footer h3 {
     font-size: 18px;
     text-align: left;
+    text-align: left;
+  }
+
+  footer p {
+    font-size: 12px;
   }
 }
