@@ -39,127 +39,151 @@ p {
 /*travel specific page style*/
 
 .travel-container {
-  width: 100%;
+  background-color: #f8f9fa;
 }
 
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/travel/voltaire_lighthouse_landscape.jpg");
+/* Hero Section */
+.hero-section {
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/travel/slovenia_landscape.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
-  padding: 160px;
-  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   color: white;
 }
 
-header h1 {
-  line-height: 1;
-  font-size: 90px;
-  letter-spacing: 3px;
+.hero-content {
+  padding: 2rem;
 }
 
-header h3 {
-  line-height: 1.5;
-  font-size: 30px;
-  margin: 50px 0;
-  letter-spacing: 3px;
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: "Playfair Display", serif;
 }
 
-footer h3 {
-  font-size: 20px;
+.hero-content h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
 }
 
-footer p {
-  font-size: 14px;
-  line-height: 1;
+/* Gallery Section */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.gallery-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.image-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-card:hover {
+  transform: translateY(-5px);
+}
+
+.image-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  padding: 1rem;
+  color: white;
+}
+
+.image-overlay p {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+}
+
+/* Modern Footer */
+.modern-footer {
+  background-color: var(--secondary-color);
+  color: #000000;
+  padding: 2rem 0;
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
   margin: 0 auto;
-  grid-gap: 64px;
-  padding: 60px 0;
-  max-width: 90%;
+  padding: 0 2rem;
 }
 
-footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-    url("../images/travel/lisbon.jpg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  margin: 0;
+.footer-card h3 {
+  font-family: var(--heading-font);
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: var(--primary-color);
 }
 
-h2 {
-  text-align: center;
+.footer-card p {
+  font-family: var(--primary-font);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 0;
 }
 
-.image-gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 40px;
-  padding: 60px;
-  background-color: rbga(211, 211, 211);
+.instagram-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
 }
 
-.image-gallery img {
-  width: 100%;
-  aspect-ratio: 1/1;
-  filter: drop-shadow(0px 10px 5px #898181);
+.instagram-link:hover {
+  opacity: 0.7;
 }
 
-.song-embed {
-  width: 400px;
-  aspect-ratio: 1/1;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-
-@media (max-width: 800px) {
-  .footer-grid {
-    grid-template-columns: 1fr;
-    padding: 20px;
-    max-width: 100%;
-    grid-gap: 10px;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
   }
 
-  header {
-    padding: 60px;
+  .hero-content h3 {
+    font-size: 1.2rem;
   }
 
-  header h1 {
-    font-size: 45px;
+  .section-container {
+    padding: 2rem 1rem;
   }
 
-  header h3 {
-    font-size: 24px;
-    margin: 20px 0;
-  }
-
-  footer h3 {
-    font-size: 18px;
-    text-align: left;
-    text-align: left;
-  }
-
-  footer p {
-    font-size: 12px;
-  }
-
-  section h2 {
-    font-size: 18px;
-  }
-
-  .image-gallery {
-    padding: 20px;
-    grid-gap: 5px;
-  }
-
-  .song-embed {
-    width: 200px;
+  .gallery-section h2 {
+    font-size: 2rem;
   }
 }
