@@ -100,6 +100,7 @@ p {
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  aspect-ratio: 3/4;
 }
 
 .image-card:hover {
@@ -108,8 +109,9 @@ p {
 
 .image-card img {
   width: 100%;
-  height: 300px;
+  height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .image-overlay {
@@ -185,5 +187,15 @@ p {
 
   .gallery-section h2 {
     font-size: 2rem;
+  }
+
+  .image-card img {
+    height: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .image-card img {
+    height: 300px;
   }
 }
